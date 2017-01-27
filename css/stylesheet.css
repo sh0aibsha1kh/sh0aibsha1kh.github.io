@@ -1,0 +1,60 @@
+.demo-1 .large-header {
+    background-image: url('../img/bg.png');
+}
+
+.demo-1 .main-title,
+.demo-3 .main-title {
+    text-transform: uppercase;
+    font-size: 4.2em;
+    letter-spacing: 0.1em;
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+p,
+h1 {
+    font-family: 'Overpass', 'courier new', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.bio {
+    font-size: 18px;
+    margin: 10px;
+}
+
+#hello {
+    font-size: 50px;
+    margin: 5px;
+}
+
+#main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 650px;
+    height: 325px;
+    margin-left: -325px;
+    margin-top: -162.5px;
+}
+
+a {
+    text-decoration: none;
+    color: #03A9F4;
+}
+
+#title-header {
+    opacity: 0;
+}
+
+#body-header {
+    opacity: 0;
+}
