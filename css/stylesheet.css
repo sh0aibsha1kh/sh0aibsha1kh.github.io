@@ -1,20 +1,9 @@
 @media (max-width: 481px) {
-    .demo-1 .large-header {
-        background: #263238 !important;
-    }
     .bio {
-        /*
-        padding-left: 150px !important;
-        padding-right: 150px !important;
-*/
         font-size: 14.4px !important;
     }
     #hello1,
     #hello2 {
-        /*
-        padding-left: 50px !important;
-        padding-right: 50px !important;
-*/
         font-size: 40px !important;
     }
     #main {
