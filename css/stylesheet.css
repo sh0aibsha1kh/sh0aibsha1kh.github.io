@@ -1,3 +1,17 @@
+@media (min-width:480px) {
+    html {
+        background-color: black;
+    }
+    p,
+    h1 {
+        font-family: 'Overpass', 'courier new', sans-serif;
+        text-align: center;
+        color: white;
+        overflow: hidden;
+        font-size: 10px;
+    }
+}
+
 .demo-1 .large-header {
     background-image: url('../img/bg.png');
 }
