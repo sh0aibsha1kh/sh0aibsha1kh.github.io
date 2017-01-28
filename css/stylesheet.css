@@ -1,10 +1,15 @@
 @media (max-width: 481px) {
     .demo-1 .large-header {
-        background: url('../img/bg.png') no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+        background: #37474F !important;
+    }
+    .bio {
+        padding-left: 150px !important;
+        padding-right: 150px !important;
+    }
+    #hello1,
+    #hello2 {
+        padding-left: 50px !imporant;
+        padding-right: 50px !imporant;
     }
 }
 
