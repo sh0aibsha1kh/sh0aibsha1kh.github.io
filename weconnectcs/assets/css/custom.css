@@ -201,6 +201,7 @@ button, input, .btn, a.btn {
     background: url("../img/sponsors-bg.png") 40% 40% fixed;
     text-align: center;
     padding: 25px 0 25px;
+    height: 5000px;
 }
 
 .sponsors-box {
