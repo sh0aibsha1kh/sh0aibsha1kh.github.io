@@ -66,21 +66,27 @@ button, input, .btn, a.btn {
 	line-height: 42px;
 	margin: 0 5px 20px 0;
 	padding: 0;
-	-webkit-border-radius: 50px;
-	-moz-border-radius: 50px;
-	border-radius: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
 	color: white;
 }
 
-.badge.social.twitter:hover {
+.badge.social.twitter {
 	background: #55acee;
 }
 
-.badge.social.facebook:hover {
+.badge.social.twitter:hover, .badge.social.facebook:hover, .badge.social.gplus:hover {
+    -webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+}
+
+.badge.social.facebook {
 	background: #3b5998;
 }
 
-.badge.social.gplus:hover {
+.badge.social.gplus {
 	background: #db4b39;
 }
 
