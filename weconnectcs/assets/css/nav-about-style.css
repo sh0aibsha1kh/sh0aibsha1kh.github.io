@@ -1,15 +1,15 @@
 .navbar-default .navbar-nav>.active {
     color: #fff;
-    background: #03a9f4;
+    background: #673ab7;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background: #03a9f4;
+    background: #673ab7;
 }
 
-#nav-about a:hover {
-    background: #673ab7;
+#nav-home a:hover {
+    background: #03a9f4;
     color: #fff;
 }
 
