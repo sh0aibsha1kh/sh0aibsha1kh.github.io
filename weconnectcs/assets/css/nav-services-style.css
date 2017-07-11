@@ -1,11 +1,11 @@
 .navbar-default .navbar-nav>.active {
     color: #fff;
-    background: #e91e63;
+    background: #ff9800;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background: #e91e63;
+    background: #ff9800;
 }
 
 #nav-about a:hover {
@@ -19,7 +19,7 @@
 }
 
 #nav-events a:hover {
-    background: #ff9800;
+    background: #e91e63;
     color: #fff;
 }
 
