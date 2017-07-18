@@ -14,12 +14,12 @@
 }
 
 #nav-services a:hover {
-    background: #e91e63;
+    background: #ff9800;
     color: #fff;
 }
 
 #nav-events a:hover {
-    background: #ff9800;
+    background: #e91e63;
     color: #fff;
 }
 
