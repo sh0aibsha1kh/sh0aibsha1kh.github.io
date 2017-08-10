@@ -121,8 +121,12 @@ button, input, .btn, a.btn {
 
 /* ==== BIG DISPLAY ==== */
 
-#home-page h1, #home-page h2, #home-page h3, #home-page h6 {
-    color: #03a9f4;
+#home-page h1, #home-page h6 {
+    color: #FFFFFF;
+
+}
+
+#home-page h1, #home-page h6, #home-page h2, #home-page h3, #home-page h4 {
     text-shadow: 1px 1px 3px #002f6c;
 }
 
@@ -246,6 +250,10 @@ button, input, .btn, a.btn {
     padding: 50px;
 }
 
+.partner-logo-box img {
+    width: 100%;
+}
+
 
 /* ==== FOOTER ==== */
 
@@ -268,7 +276,7 @@ footer {
     display: inline-block;
 }
 
-#home-page a .social-icons,#home-page a .social-icons:visited,#home-page a .social-icons:active {
+#home-page a .social-icons, #home-page a .social-icons:visited, #home-page a .social-icons:active {
     color: black;
     text-decoration: none !important;
     padding: 2px 10px 2px 10px;
@@ -289,6 +297,7 @@ footer {
     padding: 25px 0 25px;
 }
 
+
 /* ======== ABOUT PAGE ======== */
 
 #about-page h1, #about-page h2, #about-page h3 {
@@ -301,7 +310,7 @@ footer {
     padding: 25px 0 25px;
 }
 
-#about-page a .social-icons,#about-page a .social-icons:visited,#about-page a .social-icons:active {
+#about-page a .social-icons, #about-page a .social-icons:visited, #about-page a .social-icons:active {
     color: black;
     text-decoration: none !important;
     padding: 2px 10px 2px 10px;
@@ -310,6 +319,7 @@ footer {
 #about-page a .social-icons:hover {
     color: #673ab7;
 }
+
 
 /* ======== EVENTS PAGE ======== */
 
@@ -323,7 +333,7 @@ footer {
     padding: 25px 0 25px;
 }
 
-#events-page a .social-icons,#events-page a .social-icons:visited,#events-page a .social-icons:active {
+#events-page a .social-icons, #events-page a .social-icons:visited, #events-page a .social-icons:active {
     color: black;
     text-decoration: none !important;
     padding: 2px 10px 2px 10px;
@@ -346,7 +356,7 @@ footer {
     padding: 25px 0 25px;
 }
 
-#services-page a .social-icons,#services-page a .social-icons:visited,#services-page a .social-icons:active {
+#services-page a .social-icons, #services-page a .social-icons:visited, #services-page a .social-icons:active {
     color: black;
     text-decoration: none !important;
     padding: 2px 10px 2px 10px;
@@ -369,7 +379,7 @@ footer {
     padding: 25px 0 25px;
 }
 
-#contact-page a .social-icons,#contact-page a .social-icons:visited,#contact-page a .social-icons:active {
+#contact-page a .social-icons, #contact-page a .social-icons:visited, #contact-page a .social-icons:active {
     color: black;
     text-decoration: none !important;
     padding: 2px 10px 2px 10px;
