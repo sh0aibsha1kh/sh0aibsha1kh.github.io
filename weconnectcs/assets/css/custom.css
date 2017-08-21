@@ -123,7 +123,6 @@ button, input, .btn, a.btn {
 
 #home-page h1, #home-page h6 {
     color: #FFFFFF;
-
 }
 
 #home-page h1, #home-page h6, #home-page h2, #home-page h3, #home-page h4 {
@@ -300,7 +299,12 @@ footer {
 
 /* ======== ABOUT PAGE ======== */
 
-#about-page h1, #about-page h2, #about-page h3 {
+#about-page h1 {
+    color: white;
+    text-shadow: 1px 1px 3px #000063;
+}
+
+#about-page h2, #about-page h3 {
     color: #673ab7;
     text-shadow: 1px 1px 3px #000063;
 }
@@ -323,7 +327,12 @@ footer {
 
 /* ======== EVENTS PAGE ======== */
 
-#events-page h1, #events-page h2, #events-page h3 {
+#events-page h1 {
+    color: white;
+    text-shadow: 1px 1px 3px #560027;
+}
+
+#events-page h2, #events-page h3 {
     color: #e91e63;
     text-shadow: 1px 1px 3px #560027;
 }
@@ -346,7 +355,12 @@ footer {
 
 /* ======== SERVICES PAGE ======== */
 
-#services-page h1, #services-page h2, #services-page h3 {
+#services-page h1 {
+    color: white;
+    text-shadow: 1px 1px 3px #ac1900;
+}
+
+#services-page h2, #services-page h3 {
     color: #ff9800;
     text-shadow: 1px 1px 3px #ac1900;
 }
@@ -369,7 +383,12 @@ footer {
 
 /* ======== CONTACT PAGE ======== */
 
-#contact-page h1, #contact-page h2, #contact-page h3 {
+#contact-page h1{
+    text-shadow: 1px 1px 3px #003d00;
+    color: white;
+}
+
+#contact-page h2, #contact-page h3 {
     color: #8bc34a;
     text-shadow: 1px 1px 3px #003d00;
 }
@@ -387,4 +406,8 @@ footer {
 
 #contact-page a .social-icons:hover {
     color: #8bc34a;
+}
+
+#contact-page-main-section {
+    height: 500px;
 }
