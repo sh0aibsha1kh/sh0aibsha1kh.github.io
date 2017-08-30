@@ -1,0 +1,186 @@
+/* ===== COLOUR SCHEME ===== */
+
+
+/* ===== GLOBAL ===== */
+
+body {
+  font-family: 'Overpass', sans-serif;
+}
+
+.display-4 {
+  padding-left: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-shadow: 1px 1px 1px #212529;
+}
+
+
+/* ===== NAVBAR ===== */
+
+#navbar-logo {
+  height: 35px;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0) !important;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.navbar.scrolled {
+  background: rgba(248, 249, 250, 0.75) !important;
+}
+
+
+/* ===== HEADER ===== */
+
+#home {
+  background: url(../assets/header-bg.png) 60% 80% no-repeat;
+  height: 1000px;
+  text-align: center;
+  padding-top: 75px;
+  margin-bottom: -100px;
+  /* to bring the next section closer (upwards) */
+}
+
+#home .h3 {
+  padding-bottom: 25px;
+}
+
+#home .btn {
+  margin-bottom: 25px;
+}
+
+#jumbo-logo {
+  width: 150px;
+}
+
+#home .badge.social {
+  background-color: #212529;
+}
+
+@media (max-width: 576px) {
+  #home .display-1 {
+    font-size: 4em !important;
+  }
+}
+
+
+/* ===== ABOUT ===== */
+
+
+/* YOUTUBE VIDEO */
+
+#youtube-video-section {
+  background: url(../assets/header-bg-red.png) 50% 75% fixed;
+  height: 650px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+#how-it-works {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  #youtube-video-section {
+    padding-top: 50px;
+    height: 450px !important;
+  }
+  #youtube-video-section h1 {
+    padding-bottom: 50px;
+  }
+}
+
+
+/* ===== CROWDSALE ===== */
+
+#crowdsale {
+  padding-top: 25px;
+  padding-bottom: 50px;
+  background: url(../assets/texture.jpg) 50% 50%;
+}
+
+#seperate-border{
+  border-bottom: 3px solid #212529;
+  padding-bottom: 50px;
+}
+
+#bottom-border {
+  padding-top: 50px;
+}
+
+
+
+
+/* ===== ROADMAP ===== */
+
+#roadmap {
+  padding-top: 25px;
+}
+
+/* ===== TEAM ===== */
+
+#team .container {
+  text-align: center;
+}
+
+#team img {
+  border-radius: 50%;
+}
+
+#team .col-sm-3 {
+  padding-top: 100px;
+}
+
+.badge.social {
+  background: #ccc;
+  font-size: 24px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 42px;
+  margin: 0 5px 20px 0;
+  padding: 0;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  color: white;
+  background-color: #212529;
+}
+
+#team {
+  background: url(../assets/header-bg-yellow.png) 40% 20%;
+  padding-bottom: 50px;
+}
+
+
+/* ===== FOOTER ===== */
+
+#footer {
+  background-color: #212529;
+  color: white;
+  padding: 25px 0 25px 0;
+}
+
+.platforms h4 {
+  display: inline;
+}
+
+#footer-logo{
+  height: 200px;
+  padding-bottom: 30px;
+}
+
+#footer h3{
+  padding-bottom: 30px;
+}
