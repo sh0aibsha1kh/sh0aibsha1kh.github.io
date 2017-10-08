@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Ryde is a decentralized transportation platform.">
+    <meta name="author" content="Ryde">
+
+    <title>Ryde</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Timeline -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/modernizr.js"></script>
+
+    <!-- Chart -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css" rel="stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
+
+    <script type="text/javascript">
+        onReady('#chart', function() {
+
+            var chart = c3.generate({
+                bindto: '#chart',
+                data: {
+                    columns: [
+                        ['Ecosystem', 100],
+                        ['Company', 100],
+                        ['Sale', 700],
+                    ],
+                    type: 'pie',
+                    onclick: function(d, i) {
+                        console.log("onclick", d, i);
+                    },
+                    onmouseover: function(d, i) {
+                        console.log("onmouseover", d, i);
+                    },
+                    onmouseout: function(d, i) {
+                        console.log("onmouseout", d, i);
+                    }
+                },
+                color: {
+                    pattern: ["#f44336", "#ffc107", "#4caf50"],
+                },
+            });
+
+        });
+
+        // Set a timeout so that we can ensure that the `chart` element is created.
+        function onReady(selector, callback) {
+            var intervalID = window.setInterval(function() {
+                if (document.querySelector(selector) !== undefined) {
+                    window.clearInterval(intervalID);
+                    callback.call(this);
+                }
+            }, 500);
+        }
+
+    </script>
+
+    <script type="text/javascript">
+        onReady('#chart2', function() {
+
+            var chart = c3.generate({
+                bindto: '#chart2',
+                data: {
+                    columns: [
+                        ['Phase 1', 210],
+                        ['Phase 2', 365],
+                        ['Phase 3', 125],
+                    ],
+                    type: 'donut',
+                    onclick: function(d, i) {
+                        console.log("onclick", d, i);
+                    },
+                    onmouseover: function(d, i) {
+                        console.log("onmouseover", d, i);
+                    },
+                    onmouseout: function(d, i) {
+                        console.log("onmouseout", d, i);
+                    }
+                },
+                color: {
+                    pattern: ["#ffc107", "#4caf50", "#f44336"],
+                },
+            });
+
+        });
+
+        // Set a timeout so that we can ensure that the `chart` element is created.
+        function onReady(selector, callback) {
+            var intervalID = window.setInterval(function() {
+                if (document.querySelector(selector) !== undefined) {
+                    window.clearInterval(intervalID);
+                    callback.call(this);
+                }
+            }, 500);
+        }
+
+    </script>
+
+
+</head>
+
+<body id="page-top">
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar fixed-top navbar-light bg-light navbar-expand-lg" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <img id="navbar-logo" src="assets/navbar-logo-01.png" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#crowdsale">Crowdsale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#roadmap">Roadmap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HOME ===== -->
+
+    <section id="home" class="jumbotron-fluid" data-type="background" data-speed="5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-sm-12">
+                    <img id="jumbo-logo" src="assets/rydeshare-logo.png" />
+                    <h1 class="display-1">RydeShare</h1>
+                    <h1 class="h3">Power to the Driver</h1>
+                    <button type="button" class="btn btn-outline-dark text-uppercase">Whitepaper</button>
+                    <p class="lead text-justify">Hello, World! Welcome to Ryde.</p>
+                    <p class="lead text-justify"> Thank you for taking an interest in our platform. With the help of our investors and early adopters, we will revolutionize the transportation industry together. Please stay tuned for more announcements regarding the platform and the upcoming crowdsale.
+                    </p>
+                    <p class="lead text-justify">For more information, check us out on the following:</p>
+
+                    <a href="https://twitter.com/bradhussey" class="badge social twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://facebook.com/bradhussey" class="badge social facebook" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="https://plus.google.com/+BradHussey" class="badge social gplus" target="_blank"><i class="fa fa-reddit-alien"></i></a>
+                </div>
+            </div>
+
+
+
+            <!--“Hello World!” Welcome to Ryde. First of all we would like to thank you for taking an interest in our Ryde platform.
+      With the help of our investors and early adopters we will revolutionize the ridesharing and carpooling industry together.
+      Please stay tuned for more announcements regarding the platform and the upcoming crowdsale. For more information you
+      can follow us on the following social media platforms:-->
+
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+
+    <section id="about">
+        <h1 class="display-4">What is Ryde?</h1>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <p class="lead text-justify">Ryde is a decentralized platform built on the Ethereum network. Our vision is to build a ride sharing network that eliminates the middleman and increases profits for drivers while decreasing costs for passengers. The Ryde network will consist of accredited and certified drivers offering rides to passengers that request the service. Payments will be set by the customer and then accepted by a nearby driver. The main goal of the Ryde network will be to become a decentralized means of travel built by the people, for the people.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="row align-items-center justify-content-center">
+                <div class=col-10>
+                    <h1 class="text-center">Technology</h1>
+                    <p class="text-justify lead">Ryde will consist of open source applications developed for the Web, iOS and Android. Payments will be processed using RydeCoin (RYD). The application will allow passengers to place requests for rides with fees determined in terms of RydeCoin based on factors such as demand, availablilty, distance, time, etc. The passenger will be required to place a deposit amount of RydeCoin to cover driver inconvenience due to events such as cancellations. Once requests have been placed and approved, nearby drivers will be alerted of the available passenger. The first driver to accept the request will be awarded the contract. To prevent drivers from defaulting on accepted passengers a small deposit or RydeCoin will be requested from the driver. This deposit will be returned upon the completion of the transaction.</p>
+                    <p class="text-uppercase">For more information, check out the <a href="#">whitepaper</a>.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="jumbotron-fluid" id="youtube-video-section">
+
+            <div class="container">
+
+                <div class="row justify-content-center">
+                    <div class="col-sm-8">
+                        <h1 id="how-it-works" class="text-center">See How It Works</h1>
+                        <div data-example-id="responsive-embed-16by9-iframe-youtube">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/h7EPB0Yz4jc" allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <!-- ===== CROWDSALE ===== -->
+
+    <section id="crowdsale">
+
+        <h1 class="display-4">Crowdsale</h1>
+
+        <div class="container">
+            <div class="row align-items-center" id="seperate-border">
+
+                <div class="col-sm-5">
+
+                    <div id="chart"></div>
+
+                </div>
+
+                <div class="col-sm-7">
+
+                    <h2>Coin Supply</h2>
+                    <p class="lead">We plan on releasing 900 Million RydeCoins (RYD) in total. These coins will be partitioned in the following ways:</p>
+                    <ul>
+                        <li><strong>100 Million RYD</strong> (Ecosystem Reserve)</li>
+                        <li><strong>100 Million RYD</strong> (Company Reserve)</li>
+                        <li><strong>700 Million RYD</strong> (Sale Coins)</li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="row align-items-center" id="bottom-border">
+
+                <div class="col-sm-7">
+
+                    <h2>Phases</h2>
+                    <p class="lead"><strong>Phase 1:</strong> 210M RydeCoins (1 ETH = 2500 RYD)</p>
+                    <p class="lead"><strong>Phase 2:</strong> 365M RydeCoins (1 ETH = 2000 RYD)</p>
+                    <p class="lead"><strong>Phase 3:</strong> 125M RydeCoins (1 ETH = 1500 RYD)</p>
+                </div>
+
+                <div class="col-sm-5">
+
+                    <div id="chart2"></div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ===== ROADMAP ===== -->
+    <section id="roadmap">
+        <h1 class="display-4">Roadmap</h1>
+        <div id="cd-timeline" class="cd-container">
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-red">
+                    <img src="img/cd-icon-location.svg" alt="Location">
+                </div>
+                <!-- cd-timeline-img -->
+
+                <div class="cd-timeline-content">
+                    <h2>Title of section 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+                    <a href="#0" class="cd-read-more">Read more</a>
+                    <span class="cd-date">August 2017</span>
+                </div>
+                <!-- cd-timeline-content -->
+            </div>
+            <!-- cd-timeline-block -->
+
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-yellow">
+                    <img src="img/cd-icon-location.svg" alt="Location">
+                </div>
+                <!-- cd-timeline-img -->
+
+                <div class="cd-timeline-content">
+                    <h2>Title of section 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+                    <a href="#0" class="cd-read-more">Read more</a>
+                    <span class="cd-date">October 2017</span>
+                </div>
+                <!-- cd-timeline-content -->
+            </div>
+            <!-- cd-timeline-block -->
+
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-green">
+                    <img src="img/cd-icon-location.svg" alt="Location">
+                </div>
+                <!-- cd-timeline-img -->
+
+                <div class="cd-timeline-content">
+                    <h2>Final Section</h2>
+                    <p>This is the content of the last section</p>
+                    <span class="cd-date">April 2018</span>
+                </div>
+                <!-- cd-timeline-content -->
+            </div>
+            <!-- cd-timeline-block -->
+            <!-- cd-timeline -->
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-red">
+                    <img src="img/cd-icon-location.svg" alt="Location">
+                </div>
+                <!-- cd-timeline-img -->
+
+                <div class="cd-timeline-content">
+                    <h2>Title of section 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+                    <a href="#0" class="cd-read-more">Read more</a>
+                    <span class="cd-date">August 2017</span>
+                </div>
+                <!-- cd-timeline-content -->
+            </div>
+            <!-- cd-timeline-block -->
+
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-yellow">
+                    <img src="img/cd-icon-location.svg" alt="Location">
+                </div>
+                <!-- cd-timeline-img -->
+
+                <div class="cd-timeline-content">
+                    <h2>Title of section 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+                    <a href="#0" class="cd-read-more">Read more</a>
+                    <span class="cd-date">October 2017</span>
+                </div>
+                <!-- cd-timeline-content -->
+            </div>
+            <!-- cd-timeline-block -->
+
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-green">
+                    <img src="img/cd-icon-location.svg" alt="Location">
+                </div>
+                <!-- cd-timeline-img -->
+
+                <div class="cd-timeline-content">
+                    <h2>Final Section</h2>
+                    <p>This is the content of the last section</p>
+                    <span class="cd-date">April 2018</span>
+                </div>
+                <!-- cd-timeline-content -->
+            </div>
+            <!-- cd-timeline-block -->
+            <!-- cd-timeline -->
+        </div>
+    </section>
+
+    <!-- ===== TEAM ===== -->
+
+    <section id="team">
+        <h1 class="display-4">Team</h1>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-3">
+
+                    <img src="assets/omer.jpg" />
+                    <p class="lead">Omer Shukrullah</p>
+                    <p>CEO</p>
+
+                    <a href="https://twitter.com/bradhussey" class="badge social twitter" target="_blank"><i class="fa fa-envelope-o"></i></a>
+                    <a href="https://facebook.com/bradhussey" class="badge social facebook" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="https://plus.google.com/+BradHussey" class="badge social gplus" target="_blank"><i class="fa fa-linkedin"></i></a>
+
+                </div>
+
+                <div class="col-sm-3">
+
+                    <img src="assets/hassan.jpg" />
+
+                    <p class="lead">Hassan Latif</p>
+                    <p>CIO</p>
+
+                    <a href="https://twitter.com/bradhussey" class="badge social twitter" target="_blank"><i class="fa fa-envelope-o"></i></a>
+                    <a href="https://facebook.com/bradhussey" class="badge social facebook" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="https://plus.google.com/+BradHussey" class="badge social gplus" target="_blank"><i class="fa fa-linkedin"></i></a>
+
+                </div>
+
+                <div class="col-sm-3">
+
+                    <img src="assets/maher.jpg" />
+
+                    <p class="lead">Maher Shukrullah</p>
+                    <p>COO</p>
+
+                    <a href="https://twitter.com/bradhussey" class="badge social twitter" target="_blank"><i class="fa fa-envelope-o"></i></a>
+                    <a href="https://facebook.com/bradhussey" class="badge social facebook" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="https://plus.google.com/+BradHussey" class="badge social gplus" target="_blank"><i class="fa fa-linkedin"></i></a>
+
+                </div>
+
+                <div class="col-sm-3">
+
+                    <img src="assets/shoaib.jpg" />
+
+                    <p class="lead">Shoaib Shaikh</p>
+                    <p>CTO</p>
+
+                    <a href="https://twitter.com/bradhussey" class="badge social twitter" target="_blank"><i class="fa fa-envelope-o"></i></a>
+                    <a href="https://facebook.com/bradhussey" class="badge social facebook" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="https://plus.google.com/+BradHussey" class="badge social gplus" target="_blank"><i class="fa fa-linkedin"></i></a>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="footer">
+        <div class="container">
+
+            <div class="row align-items-center">
+                <div class="col-sm-4">
+
+                    <div class="platforms">
+                        <a href="mailto:contact@rydeshare.org" class="badge social twitter" target="_blank"><i class="fa fa-envelope-o"></i></a>
+                        <h4>contact@rydeshare.org</h4>
+                    </div>
+
+                    <div class="platforms">
+                        <a href="https://twitter.com/_RydeShare" class="badge social twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <h4>@_Ryde</h4>
+                    </div>
+
+                    <div class="platforms">
+                        <a href="https://reddit.com/r/rydeshare" class="badge social twitter" target="_blank"><i class="fa fa-reddit-alien"></i></a>
+                        <h4>/r/rydeshare</h4>
+                    </div>
+
+                    <div class="platforms">
+                        <a href="https://github.com/rydeshare" class="badge social twitter" target="_blank"><i class="fa fa-github"></i></a>
+                        <h4>rydeshare</h4>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-4 text-center">
+
+                    <img id="footer-logo" src="assets/rydeshare-logo.png" />
+                    <h1>Ryde</h1>
+                    <h3>Power to the Driver</h3>
+
+                    <small id="copyright">&copy;Ryde 2017</small>
+
+                </div>
+
+                <div class="col-sm-4">
+                    <h4>Contact Us</h4>
+                    <form method="POST" action="http://formspree.io/rydesharenetwork@gmail.com">
+
+                        <div class="form-group">
+                            <label for="name-input">Name</label>
+                            <input type="text" name="name" class="form-control" id="name-input" placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email-input">Email address</label>
+                            <input type="email" name="_replyto" class="form-control" id="email-input" aria-describedby="emailHelp" placeholder="Your email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-control-label" for="message-input">Message</label>
+                            <textarea type="text" name="message" class="form-control" id="message-input" placeholder="Your message" rows="2"></textarea>
+                        </div>
+
+                        <button type="submit" value="Send" class="btn btn-outline-success">Submit</button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/scrolling-nav.js"></script>
+    <script src="js/parallax.js"></script>
+
+    <!-- Timeline -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Navigation -->
+
+    <script src="js/navbar.js"></script>
+
+</body>
+
+</html>
