@@ -16,13 +16,9 @@
     }
 }
 
-.demo-1 .large-header {
-    background: url('../img/bg.png');
-    height: 100%;
-}
-
 body {
-    margin: 0;
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
 }
 
 p,
@@ -62,20 +58,4 @@ a {
 #hello2,
 #body-header {
     opacity: 0;
-}
-
-.noselect {
-    -webkit-touch-callout: none;
-    /* iOS Safari */
-    -webkit-user-select: none;
-    /* Safari */
-    -khtml-user-select: none;
-    /* Konqueror HTML */
-    -moz-user-select: none;
-    /* Firefox */
-    -ms-user-select: none;
-    /* Internet Explorer/Edge */
-    user-select: none;
-    /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
 }
