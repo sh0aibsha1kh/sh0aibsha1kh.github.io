@@ -1,55 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
     <title>Shoaib Shaikh</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+  </head>
 
-
-</head>
-
-<body>
+  <body>
     <div class="container demo-1">
-        <div class="content">
-            <div id="main">
+      <div class="content">
+        <div id="main">
+          <div id="title-header">
+            <h1 id="hello1" class="text-center noselect">Hello, World!</h1>
+            <h1 id="hello2" class="text-center noselect">I'm Shoaib Shaikh.</h1>
+          </div>
 
-                <div id="title-header">
-                    <h1 id="hello1" class="text-center noselect">Hello, World!</h1>
-                    <h1 id="hello2" class="text-center noselect">I'm Shoaib Shaikh.</h1>
-                </div>
+          <div id="body-header">
+            <p class="bio text-center noselect" id="bio1">
+              I'm in my final year at the University of Toronto, studying
+              Computer Science (specializing in Artificial Intelligence).
+            </p>
 
-                <div id="body-header">
-                    <p class="bio text-center noselect" id="bio1">I'm in my final year at the University of Toronto, studying Computer Science (specializing in Artificial Intelligence). </p>
-
-                    <p class="bio text-center noselect" id="bio3">My personal website is still under construction, but feel free to e-mail me at <a href="mailto:shoaib@shoaibshaikh.ca">shoaib@shoaibshaikh.ca</a>.</p>
-                </div>
-
-            </div>
-            <div id="large-header" class="large-header">
-                <canvas id="demo-canvas"></canvas>
-
-            </div>
+            <p class="bio text-center noselect" id="bio3">
+              My personal website is still under construction, but feel free to
+              e-mail me at
+              <a href="mailto:shoaib@shoaibshaikh.ca">shoaib@shoaibshaikh.ca</a
+              >.
+            </p>
+          </div>
         </div>
+        <div id="large-header" class="large-header">
+          <canvas id="demo-canvas"></canvas>
+        </div>
+      </div>
     </div>
-        <script>
-            $("#hello1").delay(1000).animate({
-                opacity: 1
-            }, 700);
-            $("#hello2").delay(2000).animate({
-                opacity: 1
-            }, 700);
-            $("#body-header").delay(3500).animate({
-                opacity: 1
-            }, 700);
-
-        </script>
-</body>
-
+    <script>
+      $("#hello1")
+        .delay(1000)
+        .animate(
+          {
+            opacity: 1
+          },
+          700
+        );
+      $("#hello2")
+        .delay(2000)
+        .animate(
+          {
+            opacity: 1
+          },
+          700
+        );
+      $("#body-header")
+        .delay(3500)
+        .animate(
+          {
+            opacity: 1
+          },
+          700
+        );
+    </script>
+  </body>
 </html>
