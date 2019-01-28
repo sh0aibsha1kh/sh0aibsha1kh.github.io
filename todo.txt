@@ -1,3 +1,4 @@
 - completely redesign and simplify the website
 - look into a using vue.js for the website
 - decide on animations
+- decide format/structure of what content to display
