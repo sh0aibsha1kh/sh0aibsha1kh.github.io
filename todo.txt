@@ -2,3 +2,4 @@
 - look into a using vue.js for the website
 - decide on animations
 - decide format/structure of what content to display
+- upload resume without phone number
