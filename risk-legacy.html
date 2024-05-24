@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Legacy Dice Simulator</title>
+    <link rel="stylesheet" href="risk-legacy.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Risk Legacy Dice Simulator</h1>
+
+        <div class="troops-selection">
+            <div>
+                <h2>Attacking Troops</h2>
+                <button class="troop-btn attack-btn" data-troops="1">1</button>
+                <button class="troop-btn attack-btn" data-troops="2">2</button>
+                <button class="troop-btn attack-btn" data-troops="3">3</button>
+            </div>
+            <div>
+                <h2>Defending Troops</h2>
+                <button class="troop-btn defend-btn" data-troops="1">1</button>
+                <button class="troop-btn defend-btn" data-troops="2">2</button>
+            </div>
+        </div>
+
+        <div class="modifiers">
+            <h2>Modifiers</h2>
+            <div>
+                <input type="radio" id="ammo-shortage" name="modifier" value="ammo-shortage">
+                <label for="ammo-shortage">Ammo Shortage</label>
+            </div>
+            <div>
+                <input type="radio" id="bunker" name="modifier" value="bunker">
+                <label for="bunker">Bunker</label>
+            </div>
+            <div>
+                <input type="checkbox" id="fortification" name="fortification">
+                <label for="fortification">Fortification</label>
+            </div>
+        </div>
+
+        <div class="dice-roll">
+            <button id="roll-dice">Roll Dice</button>
+            <button id="reset">Reset</button>
+        </div>
+
+        <div class="results">
+            <h2>Results</h2>
+            <div id="attacker-dice"></div>
+            <div id="defender-dice"></div>
+            <div id="outcome"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="risk-legacy.js"></script>
+</body>
+
+</html>
