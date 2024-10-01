@@ -1,0 +1,124 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Player Table */
+.players-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.players-table th,
+.players-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.players-table th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+.players-table td button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 3px;
+    transition: background-color 0.3s;
+}
+
+.players-table td button:hover {
+    background-color: #e0e0e0;
+}
+
+.draggable {
+    cursor: grab;
+}
+
+.team {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px;
+    min-height: 250px;
+    position: relative;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.team-players {
+    min-height: 120px;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.team-players .player {
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+}
+
+.avg-skill {
+    font-weight: bold;
+}
+
+#warning {
+    text-align: center;
+    color: #d9534f;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Teams Layout */
+.teams-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+    .teams-container {
+        flex-direction: column;
+    }
+
+    .team {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

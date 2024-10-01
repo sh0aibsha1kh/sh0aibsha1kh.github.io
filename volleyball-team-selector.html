@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velcro Volleyball Team Selection Tool</title>
+    <link rel="stylesheet" href="volleyball-team-selector.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="volleyball-team-selector.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Velcro Volleyball Team Selection Tool</h1>
+
+        <table class="players-table" id="playerList">
+            <thead>
+                <tr>
+                    <th>Player Name</th>
+                    <th>Skill Level</th>
+                    <th>Assign to Team</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Player rows will be added dynamically in the script -->
+            </tbody>
+        </table>
+
+        <div class="teams-container">
+            <div id="team1" class="team">
+                <h2>Team 1</h2>
+                <div class="team-players"></div>
+                <p>Average Skill: <span class="avg-skill">0.00</span></p>
+            </div>
+            <div id="team2" class="team">
+                <h2>Team 2</h2>
+                <div class="team-players"></div>
+                <p>Average Skill: <span class="avg-skill">0.00</span></p>
+            </div>
+            <div id="team3" class="team">
+                <h2>Team 3</h2>
+                <div class="team-players"></div>
+                <p>Average Skill: <span class="avg-skill">0.00</span></p>
+            </div>
+        </div>
+
+        <div id="warning" class="hidden">Warning: The skill difference between teams is too large!</div>
+    </div>
+</body>
+
+</html>
