@@ -18,26 +18,37 @@ $(document).ready(function () {
         { name: "Saad", skill: 3 },
         { name: "Salim", skill: 3 },
         { name: "Waeel", skill: 2 },
-        { name: "Basil", skill: 2 }
+        { name: "Basil", skill: 2 },
+        { name: "Turab", skill: 3 },
+        { name: "Anees", skill: 2 },
+        { name: "Hussain", skill: 3 },
+        { name: "Roshan", skill: 4 }
     ];
 
-    // Sort players by skill (highest to lowest)
-    players.sort((a, b) => b.skill - a.skill);
+    // Function to display the players sorted by skill (highest to lowest)
+    function renderPlayerList() {
+        $('#playerList tbody').empty();
+        players.sort((a, b) => b.skill - a.skill); // Sort by skill descending
 
-    // Display players in the table
-    players.forEach(player => {
-        $('#playerList tbody').append(`
-            <tr class="draggable" data-name="${player.name}" data-skill="${player.skill}">
-                <td>${player.name}</td>
-                <td>${player.skill}</td>
-                <td>
-                    <button class="add-to-team" data-team="1">Team 1</button>
-                    <button class="add-to-team" data-team="2">Team 2</button>
-                    <button class="add-to-team" data-team="3">Team 3</button>
-                </td>
-            </tr>
-        `);
-    });
+        players.forEach(player => {
+            if ($(".team-players").find("[data-name='" + player.name + "']").length === 0) { // Check if player is not already in a team
+                $('#playerList tbody').append(`
+                    <tr class="draggable" data-name="${player.name}" data-skill="${player.skill}">
+                        <td>${player.name}</td>
+                        <td>${player.skill}</td>
+                        <td>
+                            <button class="add-to-team" data-team="1">Team 1</button>
+                            <button class="add-to-team" data-team="2">Team 2</button>
+                            <button class="add-to-team" data-team="3">Team 3</button>
+                        </td>
+                    </tr>
+                `);
+            }
+        });
+    }
+
+    // Initial render of the player list
+    renderPlayerList();
 
     // Handle button click to assign players to teams
     $(document).on('click', '.add-to-team', function () {
@@ -74,20 +85,11 @@ $(document).ready(function () {
         let playerName = playerDiv.data("name");
         let playerSkill = playerDiv.data("skill");
 
-        // Return the player to the available list
-        $('#playerList tbody').append(`
-            <tr class="draggable" data-name="${playerName}" data-skill="${playerSkill}">
-                <td>${playerName}</td><td>${playerSkill}</td>
-                <td>
-                    <button class="add-to-team" data-team="1">Team 1</button>
-                    <button class="add-to-team" data-team="2">Team 2</button>
-                    <button class="add-to-team" data-team="3">Team 3</button>
-                </td>
-            </tr>
-        `);
-
         // Remove the player from the team
         playerDiv.remove();
+
+        // Return the player to the available list and re-sort it
+        renderPlayerList();
 
         // Recalculate the team averages
         updateAverageSkill();
@@ -127,4 +129,11 @@ $(document).ready(function () {
             $("#warning").addClass("hidden");
         }
     }
+
+    // Clear all teams and reset the player list
+    $("#clearAll").click(function () {
+        $(".team-players").empty(); // Clear all teams
+        renderPlayerList(); // Reset and re-sort the player list
+        updateAverageSkill(); // Update team averages
+    });
 });
