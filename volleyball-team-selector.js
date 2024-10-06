@@ -1,27 +1,27 @@
 $(document).ready(function () {
     // Sample player data
     const players = [
-        { name: "Aiesh", skill: 5 },
-        { name: "Zaid", skill: 3 },
+        { name: "Aiesh", skill: 4.5 },
+        { name: "Zaid", skill: 3.5 },
         { name: "Shoaib", skill: 4 },
         { name: "Aman", skill: 5 },
         { name: "Abdullah", skill: 4 },
         { name: "Jayant", skill: 5 },
-        { name: "Osman", skill: 4 },
+        { name: "Osman", skill: 4.5 },
         { name: "Wisam", skill: 3 },
-        { name: "Rohail", skill: 4 },
+        { name: "Rohail", skill: 3.5 },
         { name: "Affan", skill: 4 },
         { name: "Hammad", skill: 3 },
-        { name: "Imam", skill: 3 },
+        { name: "Imam", skill: 2.5 },
         { name: "Hassan", skill: 3 },
         { name: "Moin", skill: 2 },
-        { name: "Saad", skill: 3 },
-        { name: "Salim", skill: 3 },
+        { name: "Saad", skill: 3.5 },
+        { name: "Salim", skill: 3.5 },
         { name: "Waeel", skill: 2 },
         { name: "Basil", skill: 2 },
         { name: "Turab", skill: 3 },
         { name: "Anees", skill: 2 },
-        { name: "Hussain", skill: 3 },
+        { name: "Hussain", skill: 2.5 },
         { name: "Roshan", skill: 4 }
     ];
 
