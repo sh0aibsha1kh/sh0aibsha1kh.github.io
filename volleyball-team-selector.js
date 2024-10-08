@@ -2,10 +2,10 @@ $(document).ready(function () {
     // Sample player data
     const players = [
         { name: "Aiesh", skill: 4.5 },
-        { name: "Zaid", skill: 3.5 },
-        { name: "Shoaib", skill: 4 },
+        { name: "Zaid", skill: 3.0 },
+        { name: "Shoaib", skill: 3.5 },
         { name: "Aman", skill: 5 },
-        { name: "Abdullah", skill: 4 },
+        { name: "Abdullah", skill: 3.5 },
         { name: "Jayant", skill: 5 },
         { name: "Osman", skill: 4.5 },
         { name: "Wisam", skill: 3 },
@@ -19,8 +19,8 @@ $(document).ready(function () {
         { name: "Salim", skill: 3.5 },
         { name: "Waeel", skill: 2 },
         { name: "Basil", skill: 2 },
-        { name: "Turab", skill: 3 },
-        { name: "Anees", skill: 2 },
+        { name: "Turab", skill: 4 },
+        { name: "Anees", skill: 4 },
         { name: "Hussain", skill: 2.5 },
         { name: "Roshan", skill: 4 }
     ];
